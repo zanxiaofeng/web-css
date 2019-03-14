@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <style type="text/css">
+      .main{
+        width: 500px;
+        height: 400px;
+        margin: 100px auto;
+      }
+      .inline1{
+        outline: 1px black solid;
+      }
+      .inline2{
+        outline: 1px green dotted;
+      }
+      .inline3{
+        outline: 1px gray solid;
+      }
+      .inline4{
+        outline: 1px blue dotted;
+      }
+      div{
+        border: 1px red solid;
+        padding: 3px;
+        margin-bottom: 2px;
+      }
+
+      .block2{
+        margin-top: 20px;
+      }
+
+      .inline-block{
+        display: inline-block;
+      }
+
+      .block3{
+        margin-top: 20px;
+        vertical-align: middle;
+      }
+
+      .block3 .inline-block{
+        vertical-align: middle;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+      <div class="block1">
+        <span style="padding: 10px;" class="inline1">padding 可以影响内联元素的高和宽。</span>
+        <span style="line-height: 24px;" class="inline2">line-height 不能影响内联元素的高，但是可以影响行内元素的多行时的行间距。</span>
+        <div>
+            块元素宽度默认为父元素的100%，高度为子元素高度。
+        </div>
+        <span style="height: 50px;width:100px" class="inline3">height,width 并不能影响内联元素的高和宽。</span>
+        <span style="margin: 0 10px" class="inline4">margin-left,margin-right 可以影响内联元素的宽。</span>
+        <span style="margin: 10px 0" class="inline4">margin-top,margin-bottom 不能影响内联元素的高。</span>
+        <span style="border: 10px black solid" class="inline4">boder 可以影响内联元素的高和宽。</span>
+      </div>
+
+      <div class="block2">
+        <div class="inline-block">内联块的高宽，<br/>默认由其内容决定</div><div class="inline-block">inline-block 2
+        </div>
+        <div class="inline-block">
+            inline-block 3
+        </div>
+      </div>
+
+      <div class="block3">
+        <div style="padding-bottom: 60px;" class="inline-block">内联块元素的垂直对齐<br/>只与vertical-align有关</div><div class="inline-block">inline-block 2
+        </div>
+        <div style="line-height: 30px;" class="inline-block">
+            inline-block <br>3
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

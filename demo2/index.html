@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <style type="text/css">
+      .main{
+        width: 500px;
+        height: 450px;
+        margin: 100px auto;
+      }
+      div{
+        border: 1px red solid;
+        padding: 3px;
+        margin-bottom: 2px;
+      }
+
+      .block1,.block2,.block3{
+        margin-bottom: 20px;
+      }
+
+      .block1-1{
+        float: left;
+        width: 200px;
+        height: 50px;
+        background-color: blue;
+      }
+
+      .block2-1,.block3-1{
+        float: left;
+        width: 200px;
+        height: 50px;
+      }
+      .block2-2,.block3-2{
+        background-color: yellow;
+      }
+
+      .block3-2{
+        clear: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="block1">
+        <div class="block1-1">
+            左浮动元素
+        </div>
+        <span>This is some text. This is some text. This is some text.</span>
+        <span>This is some text. This is some text. This is some text.</span>
+        <span>This is some text. This is some text. This is some text.</span>
+        <span>This is some text. This is some text. This is some text.</span>
+      </div>
+      <div class="block2">
+        <div class="block2-1">
+            左浮动元素
+        </div>
+        <div class="block2-2">
+          <span>#块元素，块元素，块元素，块元素，块元素，块元素。</span>
+          <span>块元素，块元素，块元素，块元素，块元素，块元素。</span>
+          <span>块元素，块元素，块元素，块元素，块元素，块元素。</span>
+          <span>块元素，块元素，块元素，块元素，块元素，块元素。#</span>
+        </div>
+      </div>
+      <div class="block3">
+        <div class="block3-1">
+            左浮动元素
+        </div>
+        <div class="block3-2">
+          <span>#清除浮动。</span>
+          <span>块元素，块元素，块元素，块元素，块元素，块元素。</span>
+          <span>块元素，块元素，块元素，块元素，块元素，块元素。</span>
+          <span>块元素，块元素，块元素，块元素，块元素，块元素。</span>
+          <span>块元素，块元素，块元素，块元素，块元素，块元素。#</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
